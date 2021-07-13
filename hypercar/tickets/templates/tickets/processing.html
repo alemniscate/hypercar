@@ -1,0 +1,13 @@
+<html>
+<body>
+    <div>Change oil queue: {{ wait1 }}</div>
+    <div>Inflate tires queue: {{ wait2 }}</div>
+    <div>Get diagnostic queue: {{ wait3 }}</div>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Process next</button>
+    </form>
+    <div>{{ queue }}</div>
+</body>
+<html>

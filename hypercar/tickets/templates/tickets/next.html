@@ -1,0 +1,10 @@
+<html>
+<body>
+    {% if nextnumber > 0 %}
+        <div>Next ticket #{{ nextnumber }}</div>
+    {% else %}
+        <div>Waiting for the next client</div>
+    {% endif %} 
+    <div>{{ queue }}</div>
+</body>
+</html>
